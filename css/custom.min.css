@@ -50,7 +50,7 @@
 }
 
 *,*::before,*::after{ box-sizing: border-box; }
-html{ background: var(--cream); }
+html{ background: var(--cream); overflow-x: hidden; }
 html.lenis, html.lenis body{ height: auto; }
 .lenis.lenis-smooth{ scroll-behavior: auto !important; }
 .lenis.lenis-smooth [data-lenis-prevent]{ overscroll-behavior: contain; }
@@ -373,10 +373,14 @@ h1,h2,h3,h4,h5{
   .mega-nav-visual{ display:none; }
 }
 @media(max-width: 620px){
-  .mega-nav-links ul{ grid-template-columns: 1fr; gap: 2px; }
-  .mega-nav-links a{ font-size: clamp(18px, 5.5vw, 22px); padding: 10px 0; }
+  .mega-nav-links ul{ grid-template-columns: repeat(2, 1fr); gap: 4px 18px; }
+  .mega-nav-links a{ display:block; font-size: clamp(13px, 4.2vw, 17px); padding: 9px 0; line-height:1.25; }
+  .mega-nav-links .nidx{ display:block; font-size: 9px; margin-bottom: 2px; }
   .mega-nav-inner{ padding-top: 100px; padding-bottom: 20px; }
-  .mega-nav-footer{ padding: 16px var(--gutter) 22px; font-size: 11.5px; }
+  .mega-nav-footer{ padding: 16px var(--gutter) 22px; font-size: 11.5px; flex-direction: column; align-items: flex-start; }
+}
+@media(max-width: 380px){
+  .mega-nav-links a{ font-size: clamp(11.5px, 4vw, 14px); padding: 7px 0; }
 }
 
 

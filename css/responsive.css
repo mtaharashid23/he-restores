@@ -2,32 +2,58 @@
    HE RESTORES — Responsive Refinements
    ========================================================= */
 
+@media (max-width: 900px){
+  .mega-nav-links a{ font-size: clamp(16px, 2.6vw, 21px); }
+}
+
 @media (max-width: 780px){
-  .site-header{ padding: 22px 0; }
+  .site-header{ padding: 18px 0; }
   .footer-top{ padding-bottom: 46px; }
   .site-footer{ padding: 60px 0 24px; }
-  .page-hero{ padding-top: 130px; }
+  .page-hero{ padding-top: 120px; }
   .pg-section{ padding: 76px 0; }
   .two-col{ gap: 34px; }
-  .mega-nav-links a{ font-size: clamp(26px, 8vw, 40px); }
   .char-swiper .swiper-slide{ width: 78vw; }
   .review-swiper .swiper-slide{ width: 82vw; }
+
+  /* -- Header: keep brand + toggle from crowding/wrapping on tablets/phones -- */
+  .brand{ font-size: 18px; }
+  .brand small{ font-size: 8.5px; letter-spacing: 0.2em; margin-top: 3px; }
+  .nav-toggle-btn{ gap: 10px; }
+  .nav-toggle-btn .ntxt{ font-size: 11px; }
+  .hamburger{ width: 23px; height: 16px; }
+  .hamburger span:nth-child(2){ top: 7px; }
+  .hamburger span:nth-child(3){ top: 14px; }
+
+  /* -- General type scale down a notch on mobile -- */
+  body{ font-size: 15.5px; }
+  .btn{ padding: 14px 26px; font-size: 12px; }
+  .btn-lg{ padding: 16px 32px; font-size: 12.5px; }
+  .btn-text{ font-size: 12px; }
+  .eyebrow{ font-size: 11.5px; letter-spacing: 0.2em; }
 }
 
 @media (max-width: 560px){
-  body{ font-size: 15px; }
-  .btn{ padding: 14px 24px; font-size: 11.5px; }
+  body{ font-size: 14.5px; }
+  .btn{ padding: 13px 22px; font-size: 11px; }
   .qitem{ flex-direction:column; gap:12px; }
   .journey-track{ padding-left: 34px; }
   .journey-dot{ left: -34px; }
   .char-full .meta-row{ gap: 18px; }
   .swiper-nav-row{ flex-wrap: wrap; gap: 16px; }
   .swiper-progress{ order: 3; max-width: 100%; margin: 10px 0 0; }
+
+  /* -- Header: icon-only toggle once "Menu" label risks crowding the brand -- */
+  .brand{ font-size: 16.5px; }
+  .brand small{ font-size: 8px; letter-spacing: 0.16em; }
+  .nav-toggle-btn .ntxt{ display: none; }
 }
 
 @media (max-width: 420px){
   .hero-copy h1{ font-size: 38px; }
   .reflect{ padding: 100px 0; }
+  .brand{ font-size: 15px; }
+  .brand small{ font-size: 7.5px; letter-spacing: 0.12em; }
 }
 
 /* Reduced motion accessibility */
