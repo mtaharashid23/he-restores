@@ -525,12 +525,17 @@ section{ position: relative; }
 
 .hero-book{ position:relative; display:flex; justify-content:center; align-items:center; perspective: 1400px; }
 .hero-book .frame{
-  position:relative; background: var(--paper); border: 1px solid var(--sand-line);
-  padding: 30px; box-shadow: 0 40px 70px -30px rgba(34,27,18,0.25);
+  position:relative;
+  background: var(--paper);
+  border: 1px solid var(--sand-line);
+  padding: 1rem;
+  box-shadow: 0 40px 70px -30px rgba(34,27,18,0.25);
 }
 .hero-book img{
-  width: min(320px, 62vw);
-  transform-style: preserve-3d; will-change: transform; display:block;
+  width: min(380px, 62vw);
+  transform-style: preserve-3d;
+  will-change: transform;
+  display:block;
 }
 .hero-badge{
   position:absolute;
