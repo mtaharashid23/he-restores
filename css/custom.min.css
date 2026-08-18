@@ -2772,3 +2772,7 @@ section {
     margin: 0 auto;
     display: block;
 }
+
+.page-hero.media-hero .ph-media .frame {
+    aspect-ratio: unset;
+}
