@@ -2230,6 +2230,63 @@ section {
   }
 }
 
+/* Amazon review cards */
+.review-card .rhead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.review-card .rhead .avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--gold-deep);
+  flex-shrink: 0;
+}
+
+.review-card .rhead .avatar.avatar-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cream-soft);
+  color: var(--gold-deep);
+  font-family: var(--f-display);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.review-card .rname {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+
+.review-card .verified {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--terracotta-deep);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.review-card .rtitle {
+  font-family: var(--f-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-top: 14px;
+}
+
+.review-card .rtitle + p {
+  margin-top: 8px;
+}
+
 /* FAQ accordion */
 .faq-list {
   border-top: 1px solid var(--line);
